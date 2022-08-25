@@ -1,0 +1,18 @@
+
+    .userSection {
+        display: flex;
+        padding: 1rem;
+        margin-left: 6rem;
+        align-items: center;
+    }
+    .userAvatar {
+        margin-right: 2rem;
+        display: flex;
+    }
+    .userName {
+        margin-left: 1rem;
+        margin-top: .25rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #CACED3;
+    }
