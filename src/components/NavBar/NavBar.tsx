@@ -1,6 +1,8 @@
 import { Container } from "@chakra-ui/react";
 import Avatar from "@mui/material/Avatar";
-import { BellIcon, EmailIcon } from "@chakra-ui/icons";
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import styles from './navBar.module.css';
 function NavBar() {
   return (
@@ -9,14 +11,16 @@ function NavBar() {
         {/* user section */}
         <div className={styles.userSection}>
           <div className={styles.userAvatar}>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            <Avatar alt="Kobi Matagi" src="https://avatars.githubusercontent.com/u/72160375?s=400&u=42768bce014bc14e81b7f183916c4bc359c642bc&v=4" className={styles.userAvatarImg}/>
             <div className={styles.userName}>
-              <h3>Rick James</h3>
+              <h3>Kobi Matagi</h3>
+              <p className={styles.userTitle}>Project Manager</p>
             </div>
+            <KeyboardArrowDownOutlinedIcon sx={{color: '#CACED3'}}/>
           </div>
           <div className={styles.userIcons}>
-            <BellIcon marginLeft={24} w={24} h={24} color="#CACED3" />
-            <EmailIcon marginLeft={24} w={24} h={24} color="#CACED3" />
+            <NotificationsNoneOutlinedIcon className={styles.notificationsIcon} sx={{color: '#CACED3'}} />
+            <EmailOutlinedIcon className={styles.emailIcon} sx={{color: '#CACED3'}} />
           </div>
         </div>
         {/* search and icons */}
