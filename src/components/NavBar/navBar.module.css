@@ -1,0 +1,35 @@
+
+    .userSection {
+        display: flex;
+        padding: 1rem;
+        margin-left: 6rem;
+        align-items: center;
+    }
+    .userAvatar {
+        margin-right: 2rem;
+        display: flex;
+    }
+    .userAvatarImg {
+        border: 2px solid #CACED3
+    }
+    .userName {
+        margin-left: 1rem;
+        margin-top: .25rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #CACED3;
+    }
+    .userName > h2 {
+        color: #CACED3;
+    }
+    .userTitle {
+        color: #CACED3;
+        padding-top: 5px;
+        font-size: small;
+    }
+    .notificationsIcon {
+        margin-left: 2rem;
+    }
+    .emailIcon {
+        margin-left: 2rem;
+    }
