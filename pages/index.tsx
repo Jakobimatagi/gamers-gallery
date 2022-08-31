@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Feed from './components/Feed'
+import React from 'react'
 import Header from './components/Header'
 
 
