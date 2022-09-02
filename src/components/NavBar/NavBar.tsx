@@ -1,31 +1,67 @@
-import { Container } from "@chakra-ui/react";
 import Avatar from "@mui/material/Avatar";
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-import styles from './navBar.module.css';
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import SearchIcon from "@mui/icons-material/Search";
+import InputBase from "@mui/material/InputBase";
+import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
+import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
+
+import styles from "./navBar.module.css";
+
+const mockData = {
+  userName: "Kobi Matagi",
+  userTitle: "Project Manager",
+}
+
 function NavBar() {
   return (
-    <div>
-      <Container maxW="lg" mx="auto" px="4" py="4" bg={"#0C002A"}>
+    <div className={styles.navBar}>
         {/* user section */}
         <div className={styles.userSection}>
           <div className={styles.userAvatar}>
-            <Avatar alt="Kobi Matagi" src="https://avatars.githubusercontent.com/u/72160375?s=400&u=42768bce014bc14e81b7f183916c4bc359c642bc&v=4" className={styles.userAvatarImg}/>
+            <Avatar
+              alt={mockData.userName}
+              src="https://avatars.githubusercontent.com/u/72160375?s=400&u=42768bce014bc14e81b7f183916c4bc359c642bc&v=4"
+              className={styles.userAvatarImg}
+            />
             <div className={styles.userName}>
-              <h3>Kobi Matagi</h3>
-              <p className={styles.userTitle}>Project Manager</p>
+              <h3>{mockData.userName}</h3>
+              <p className={styles.userTitle}>{mockData.userTitle}</p>
             </div>
-            <KeyboardArrowDownOutlinedIcon sx={{color: '#CACED3'}}/>
+
           </div>
           <div className={styles.userIcons}>
-            <NotificationsNoneOutlinedIcon className={styles.notificationsIcon} sx={{color: '#CACED3'}} />
-            <EmailOutlinedIcon className={styles.emailIcon} sx={{color: '#CACED3'}} />
+            <NotificationsNoneOutlinedIcon
+              className={styles.notificationsIcon}
+              sx={{ color: "#CACED3" }}
+            />
+            <EmailOutlinedIcon
+              className={styles.emailIcon}
+              sx={{ color: "#CACED3" }}
+            />
           </div>
         </div>
         {/* search and icons */}
-        <div className="search">Search</div>
-      </Container>
+        <div className={styles.searchAndIcons}>
+          <div className={styles.search}>
+            <InputBase
+              className={styles.searchInput}
+              placeholder='Search'
+              sx={{ color: "#CACED3" }}
+            />
+            <SearchIcon
+              className={styles.searchIcon}
+              sx={{ color: "#CACED3" }}
+            />
+          </div>
+          <div className={styles.rightIcons}>
+            <AddBoxOutlinedIcon className={styles.addBox} sx={{ color: "#CACED3" }} />
+            <Groups2OutlinedIcon className={styles.peopleGroup} sx={{ color: "#CACED3" }} />
+            <MenuSharpIcon className={styles.menu} sx={{ color: "#CACED3" }} />
+          </div>
+        </div>
+
     </div>
   );
 }

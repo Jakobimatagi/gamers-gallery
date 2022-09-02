@@ -19,9 +19,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["@emiotion/core"]
+    "types": ["@emotion/core"]
   },
   "include": [
-    "src"
+    "src",
+    "next-env.d.ts",
+    "pages/**/*",
   ]
 }

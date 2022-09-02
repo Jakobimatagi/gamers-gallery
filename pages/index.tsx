@@ -1,14 +1,9 @@
-import type { NextPage } from 'next'
-import Feed from './components/Feed'
-import Header from './components/Header'
+import React from 'react'
 
-
-const Home: NextPage = () => {
+function index() {
   return (
-    <div>
-      <Header />
-    </div>
+    <div>index</div>
   )
 }
 
-export default Home
+export default index
