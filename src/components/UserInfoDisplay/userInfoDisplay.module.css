@@ -1,0 +1,52 @@
+
+    .userInfo {
+        display: flex;
+        padding: 1rem;
+        margin-left: 6rem;
+        align-items: center;
+    }
+    .userAvatar {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .userAvatarImg {
+        cursor: pointer;
+    }
+    .userName {
+        margin-left: 1rem;
+        margin-top: .25rem;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+        color: #000000;
+        cursor: pointer;
+    }
+    .userName > h2 {
+        color: #CACED3;
+    }
+    .userTitle {
+        color: #CACED3;
+        padding-top: 5px;
+        font-size: small;
+    }
+    .accountStats{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .accountStats > h3 {
+        margin-bottom: .5rem;
+    }
+    .accountStats > p {
+        margin: 10px;
+    }
+    .statTitles > p {
+        margin-bottom: 10px;
+    }
+    .statNumbers > p {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
